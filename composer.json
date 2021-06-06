@@ -1,9 +1,9 @@
 {
   "name": "colesnic89/smso-laravel",
   "description": "SMSO API PHP implementation for Laravel 5+",
-  "minimum-stability": "dev",
+  "minimum-stability": "stable",
   "license": "MIT",
-  "version": "1.0.2",
+  "version": "1.0.5",
   "authors": [
     {
       "name": "Maxim Colesnic",
@@ -11,7 +11,7 @@
     }
   ],
   "require": {
-    "colesnic89/smso": "*",
+    "colesnic89/smso": ">=1.0.5",
     "laravel/laravel": "*"
   },
   "autoload": {
