@@ -3,7 +3,7 @@
   "description": "SMSO API PHP implementation for Laravel 5+",
   "minimum-stability": "stable",
   "license": "MIT",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "authors": [
     {
       "name": "Maxim Colesnic",

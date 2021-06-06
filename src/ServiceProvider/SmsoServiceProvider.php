@@ -4,6 +4,7 @@ namespace SmsoLaravel\ServiceProvider;
 
 use Illuminate\Support\ServiceProvider;
 use SMSO\ApiClient;
+use SMSO\SmsoApiClientInterface;
 
 /**
  * Class SmsoServiceProvider
@@ -19,7 +20,7 @@ class SmsoServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        $this->app->singleton('smso', function ($app) {
+        $this->app->singleton(SmsoApiClientInterface::class, function ($app) {
             $apiKey = $app['config']->get('smso.apiKey');
             if ($defaultSender = $app['config']->get('smso.defaultSender')) {
                 return new ApiClient($apiKey, $defaultSender);
