@@ -7,6 +7,7 @@ use SMSO\Model\CheckRemainingCreditResponse;
 use SMSO\Model\MessageStatusResponse;
 use SMSO\Model\Sender;
 use SMSO\Model\SendMessageResponse;
+use SMSO\SmsoApiClientInterface;
 
 /**
  * Class Smso
@@ -27,7 +28,7 @@ class Smso extends Facade
      */
     protected static function getFacadeAccessor()
     {
-        return 'smso';
+        return SmsoApiClientInterface::class;
     }
 
 }
